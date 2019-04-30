@@ -7,3 +7,8 @@ git branch -d [localBranch]
 git fetch origin [remotebranch]
 
 git checkout -b [localBranch] origin/[remotebranch]
+
+#缓存/恢复本地修改
+
+git stash
+git stash pop
