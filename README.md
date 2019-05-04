@@ -11,4 +11,11 @@ git checkout -b [localBranch] origin/[remotebranch]
 #缓存/恢复本地修改
 
 git stash
+
 git stash pop
+
+#撤销本地commit
+
+git reset --soft [commitID]    保留代码
+
+git reset --hard [commitID]    全部撤销 不保留代码
