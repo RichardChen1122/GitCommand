@@ -31,3 +31,22 @@ git push origin --delete [remote_branch]
 #删除本地分支
 
 git branch -d [local_branch]
+
+#当Dev branch 和master 产生分支路的时候， 使用rebase 来merge， 避免历史中产生旁路
+git checkout experiment
+git rebase master
+  conflict resolve
+git rebase --continue
+
+git checkout master
+git merge experiment
+git push
+
+#用squash 合并commit
+git checkout experiment
+git rebase -i master
+
+git checkout master
+git merge expe
+riment
+git push
