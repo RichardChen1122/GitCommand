@@ -61,3 +61,21 @@ git checkout master
 git merge experiment
 
 git push
+
+----------------------------------------------------------------------
+Step 1. Fetch and check out the branch for this merge request
+
+git fetch origin
+git checkout -b junbo origin/junbo
+Step 2. Review the changes locally
+
+Step 3. Merge the branch and fix any conflicts that come up
+
+git fetch origin
+git checkout origin/dev
+git merge --no-ff junbo
+Step 4. Push the result of the merge to GitLab
+
+git push origin dev
+Tip: You can also checkout merge requests locally by following these guidelines.
+-----------------------------------------------------------------------
