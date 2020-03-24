@@ -8,6 +8,14 @@ git fetch origin [remotebranch]
 
 git checkout -b [localBranch] origin/[remotebranch]
 
+#添加远程仓库
+
+git remote add [name] [repo:uri]
+
+git remote -v
+
+git fetch -all
+
 #缓存/恢复本地修改
 
 git stash
